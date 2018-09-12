@@ -1,0 +1,142 @@
+.h69{
+    height: 20px;
+}
+.head{
+    
+    display: flex;
+    padding: 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        font-weight: 500;
+    }
+    border-bottom: 2px solid #BDBFC0; 
+    
+}
+.search{
+    display: flex;
+    height: 52px;
+    align-items: center;
+
+    .first,.third{
+        flex: 1;
+        padding: 0px 0px 0px 15px;
+
+    }
+    .second{
+        flex: 2;
+    }
+    input{
+        // padding: 7px 5px;
+        width: calc(100% - 15px) !important;
+
+    }
+}
+
+.main{
+    display: flex;
+    height: calc(100% - 115px );
+    color: #7a8082;
+    padding: 114px 0px 0 0px;
+    .left{
+        flex: 1;        
+        // overflow-x: auto;
+    }
+    .center{
+        flex: 2;
+        border-left: 1px solid #e0e0e0;
+        border-right: 1px solid #e0e0e0;
+
+    }
+    .right{
+        flex: 1;
+        font-size: 14px; 
+    }
+}
+.container{
+    height: 100%;
+    position: relative;
+    
+} 
+.top{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0 ;
+
+}
+//ATTRIBUTE / OPERATOR TOGGLER
+.operator-toggler{
+    display: flex;
+    border-bottom: 1px solid #e0e0e0 ;
+    .toggle-value{
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        position: relative;
+    }
+    .active{
+        background-color: #f4f7f9;
+        font-weight: 700;
+        color: #67bced;
+        position: relative;
+    }
+    .active ::after{
+        content: '';
+        position: absolute;
+        right:calc(50% - 7px);
+        top: calc(100% ); 
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid #f4f7f9;
+        clear: both;
+    }
+    .active ::before{
+        content: '';
+        position: absolute;
+        right:calc(50% - 8.5px);
+        top: calc(100% ); 
+        width: 0;
+        height: 0;
+        border-left: 8.5px solid transparent;
+        border-right: 8.5px solid transparent;
+        border-top: 8.5px solid #e0e0e0;
+        clear: both;
+    }
+}
+
+
+
+//footers
+.foot{
+    height: 115px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-top: 1px solid #e0e0e0 ;
+    display: flex;
+    flex-direction: column;
+    
+
+    .info{
+        padding: 15px 20px;
+        background-color:#edf1f6;
+    }
+}
+
+//FOOTER'S BUTTONS
+.buttons{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+    
+}
+.custom-button{
+    margin-left: 20px;
+    background-color: #2ecd71 !important;
+}

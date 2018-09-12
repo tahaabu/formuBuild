@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="top">
+        <div class="head">
+            <div>Add New State</div>
+            <div>
+              <button mat-dialog-close mat-icon-button>
+                <mat-icon>close</mat-icon>
+              </button>
+            </div>
+        </div>
+        <div class="search">
+          <div class="first input">
+            <input type="text" placeholder="Write state name here...">
+          </div>
+          <div class="second input">
+            <input type="text" placeholder="Write state discription here...">
+          </div>
+          <div class="third"></div>
+        </div> 
+    </div>     
+    <div class="main">
+      <div class="left">
+        <select-source></select-source>    
+        <hr>
+        <fact-source-view></fact-source-view>
+        
+      </div>
+      <div class="center">
+          <state-defination></state-defination>
+      </div>
+      <div class="right">
+        <div class="operator-toggler">
+          <div class="toggle-value" (click)="operator_toggler = false" [class.active]="!operator_toggler">
+            <span>
+                Attributes
+            </span>
+          </div>
+          <div class="toggle-value"  (click)="operator_toggler = true" [class.active]="operator_toggler">
+           <span>
+              Operators
+           </span>
+          </div>
+        </div>        
+        <operators-view *ngIf="operator_toggler ; else attributeView"></operators-view>
+        <ng-template #attributeView>
+          <div class="h69"></div>
+         <fact-source-view></fact-source-view>
+        </ng-template>
+       
+      </div>
+    </div>
+    <div class="foot">
+        <div class="info">
+          Name vehicle Age(in yrs)
+        </div>
+        <div class="buttons">
+          <button mat-stroked-button >Cancel</button>
+          <button mat-flat-button class="custom-button" disabled >Save</button>
+        </div>
+    </div>
+</div>
+

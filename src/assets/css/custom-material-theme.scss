@@ -1,0 +1,263 @@
+@import "./variables";
+@import "./svg-icons";
+
+.mat-expansion-panel-header-title,
+.mat-card,
+.mat-expansion-panel {
+  color: $black-color !important;
+}
+
+.mat-card,
+.mat-expansion-panel {
+  box-shadow: 0 1px 1px -5px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 1px 0 rgba(0, 0, 0, .12) !important;
+}
+
+.mat-radio-outer-circle {
+  border-radius: unset !important;
+  border-color: $black-color;
+}
+
+.mat-radio-inner-circle,
+.mat-radio-outer-circle {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.mat-select-trigger {
+  border: 1px solid $grey-color;
+  border-radius: 2px;
+  padding: 8px 10px;
+}
+
+.mat-option {
+  border-bottom: 1px solid $grey-color;
+}
+
+._custom-mat-input .mat-form-field-infix {
+  padding: 8px !important;
+  outline: none;
+  border: 1px solid $grey-color;
+  border-radius: 2px;
+}
+
+._border-less-mat-input .mat-form-field-infix {
+  border: none !important;
+}
+
+.auto-form-field-infix .mat-form-field-infix {
+  width: auto !important;
+}
+
+//._custom-mat-input .mat-input-underline,
+.mat-form-field-underline {
+  height: 0 !important;
+  bottom: 0 !important;
+}
+
+//._custom-mat-input .mat-input-underline .mat-form-field-ripple,
+.mat-form-field-underline .mat-form-field-ripple {
+  display: none !important;
+}
+
+._custom-mat-input .mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+._custom-mat-input.mat-focused .mat-form-field-label,
+._custom-mat-input.mat-form-field-can-float .mat-form-field-label {
+  @-moz-document url-prefix() {
+    top: 1.2em;
+    left: 0 !important;
+  }
+}
+
+.mat-form-field-label {
+  top: 1.65em;
+  left: 0.5em !important;
+  @include primary-text-font;
+}
+
+._inline-mat-select .mat-form-field-wrapper {
+  padding-bottom: 0px !important;
+}
+
+._inline-mat-select .mat-form-field-infix {
+  border-top: 0px !important;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  //  .mat-form-field-label.mat-empty.mat-form-field-empty {
+  //    top: 1.5em !important;
+  //  }
+  //  .mat-focused .mat-form-field-label.mat-empty.mat-form-field-empty {
+  //    top: 1.65em !important;
+  //  }
+  ._pull-down.mat-form-field-can-float .mat-form-field-label {
+    transform: translateY(-1.65em) translateX(-0.5em) scale(.8);
+  }
+}
+
+.mat-form-field-appearance-legacy.mat-form-field-can-float .mat-input-server:focus + .mat-form-field-label-wrapper .mat-form-field-label,
+.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label,
+.mat-form-field-appearance-legacy.mat-form-field-can-float .mat-form-field-autofill-control:-webkit-autofill + .mat-form-field-label-wrapper .mat-form-field-label{
+  transform: translateY(-1.5em) translateX(-0.4em) scale(0.75) perspective(100px) translateZ(0.001px);
+  -moz-transform: translateY(-1.5em) translateX(-0.4em) scale(0.75) perspective(100px) translateZ(0.001px);
+  -ms-transform: translateY(-1.5em) translateX(-0.4em) scale(0.75) perspective(100px) translateZ(0.001px);
+  -webkit-transform: translateY(-1.5em) translateX(-0.4em) scale(0.75) perspective(100px) translateZ(0.001px);
+  font-weight: 500;
+}
+
+.mat-form-field-can-float .mat-form-field-label {
+  top: 1.5em;
+}
+
+._inline-label.mat-form-field-can-float .mat-form-field-label {
+  transform: translateY(0em) translateX(0%) scale(1);
+}
+
+//._inline-label.mat-form-field-can-float .mat-form-field-autofill-control:-webkit-autofill + .mat-form-field-label-wrapper .mat-form-field-label,
+._inline-label.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  transform: translateY(0em) translateX(-100%) scale(1);
+}
+
+._invalid-input-label .mat-form-field-label {
+  color: $red-color;
+}
+
+.mat-expansion-panel-header {
+  padding: 0 10px !important;
+}
+
+.mat-radio-button {
+  margin-right: 15px;
+}
+
+mat-dialog-container {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.mat-dialog-title {
+  margin: 0 !important;
+}
+
+.mat-button-toggle {
+  color: unset !important;
+}
+
+._inline-mat-select .mat-form-field-label {
+  top: 1.95em !important;
+}
+
+._custom-mat-checkbox .mat-checkbox-layout {
+//._custom-mat-checkbox .mat-checkbox-inner-container {
+  width: inherit;
+  height: inherit;
+}
+
+.mat-form-field-top-border-0 .mat-form-field-infix {
+  border-top: 0 !important;
+}
+
+.mat-expansion-padding-0 .mat-expansion-panel-header {
+  padding: 0 !important;
+}
+
+.mat-form-field-subscript-wrapper {
+  top: calc(100% - 0.25em) !important;
+}
+
+.mat-btn-success {
+  background-color: $green-color;
+  color: $white-color !important;
+}
+
+.mat-paginator-page-size-select {
+  margin: 2px 4px 0 4px !important;
+}
+
+.businessIndustry .mat-form-field-wrapper {
+  padding-bottom: 0 !important;
+}
+
+.businessIndustry .mat-form-field-infix {
+  border: 0 !important;
+}
+
+._addEmployee .mat-form-field-wrapper {
+  padding-bottom: 0 !important;
+}
+
+.mat-form-field-type-mat-select .mat-form-field-placeholder {
+  @-moz-document url-prefix() {
+    top: 1.7em !important;
+    left: 0 !important;
+  }
+}
+
+.material-icons {
+  color: $mat-icon-color;
+}
+
+//.mat-form-field-appearance-legacy .mat-form-field-label {
+//  top: 1.95em;
+//}
+
+.mat-expansion-panel-body {
+  padding: 0 !important;
+  margin: 0 0 !important;
+}
+
+.mat-dialog-content {
+  margin: 0 auto !important;
+}
+
+.mat-dialog-actions {
+  margin-bottom: 0 !important;
+}
+
+._bordered-material-btn > .mat-button-ripple,
+._black-btn-o > .mat-button-ripple {
+  border: 1px solid $grey-color;
+  border-radius: 2px;
+}
+
+._w100-wrapper .mat-button-wrapper {
+  width: 100%;
+}
+
+//.mat-tab-body-wrapper {
+//  padding: 10px;
+//}
+
+//.mat-tab-label-active {
+//  color: $primary-color;
+//  opacity: 1 !important;
+//  background-color: $grey-color;
+//}
+
+//.mat-button-toggle-label {
+//  width: 100%;
+//  white-space: normal;
+//}
+
+//.mat-button-toggle-label-content {
+//  width: inherit;
+//  padding: 0 !important;
+//  line-height: 1em !important;
+//}
+
+//.mat-select-trigger > .mat-select-underline {
+//  display: none;
+//}
+
+
+/* Front Transactions Material customization */
+
+._transactions-expansion-panel.mat-expansion-panel-spacing {
+  margin: 0 !important;
+}
+
+._transactions-expansion-panel .mat-expansion-panel-header {
+  padding: 0 !important;
+}

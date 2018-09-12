@@ -1,0 +1,84 @@
+// Colors
+$primary-color: #0091e5;
+$orange-color: #ff8c00;
+$black-color: #4b5354;
+$green-color: #2ecd71;
+$red-color:#E64D3C;
+$purple-color: #7f5bbf;
+$white-color: #ffffff;
+$grey-color: #d6d8dd;
+$disabled-background-color: #edf1f6;
+$default-background-color: #edf1f6;
+$app-background-color: #dce1e5;
+$selected-background-color: #f4f7f9;
+$box-shadow-color: rgba(0,0,0,0.3);
+$mat-icon-color: #6b6b6b;
+$light-border-color: rgba(0,0,0,0.1);
+
+$light-black-color: #6d6d6d;
+$logo-url: '/assets/images/blue-logo.png';
+
+// Fonts
+@mixin heading-font {
+  font-weight: 500 !important;
+  font-size: 14px !important;
+}
+
+@mixin sub-heading-font {
+  font-weight: 500 !important;
+  font-size: 12px !important;
+}
+
+@mixin primary-text-font {
+  font-weight: 400 ;
+  font-size: 14px;
+}
+
+@mixin light-primary-text-font {
+  font-weight: 300 ;
+  font-size: 14px;
+}
+
+@mixin secondary-text-font {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+@mixin light-secondary-text-font {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+@mixin special-text-font {
+  font-weight: 300 !important;
+  font-size: 12px !important;
+  opacity: 0.8 !important;
+}
+
+@mixin disabled-text-font {
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  opacity: 0.4 !important;
+}
+
+@mixin image-links($icon-name, $hover-icon-name, $height, $width, $padding) {
+  background-image: url($icon-name);
+  height: $height;
+  width: $width;
+  background-repeat: no-repeat;
+  display: block;
+  padding: 0 $padding;
+  background-position-x: center;
+  &:hover {
+    background-image: url($hover-icon-name);
+  }
+}
+
+@mixin mat-card {
+  transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+  display: block;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px -5px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.12) !important;
+  background-color: $white-color;
+}

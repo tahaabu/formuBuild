@@ -1,0 +1,26 @@
+<div class="parent">
+  <div class="text-list">
+    <div>State defination</div>
+    <div class="clear-operation">
+      <div (click)="clearAll()" class="_mr-15 smallButton">Clear All</div>
+      <div class="smallButton">Undo</div>
+    </div>
+  </div>
+  <div class="input-group _pl-15 _mb-15">
+    <span >=</span>
+    <input class="_ml-15 input" type="text" [(ngModel)] = "formula" name="" id="" (keyup)="formulaToElementsArray()">
+  </div>
+  
+  <div class="final-view">
+  
+    <div class="element-box" *ngFor="let e of elementsArray;let i=index">
+      <i [matMenuTriggerFor]="menu" class="material-icons more">more_vert</i>
+      <div *ngIf="e !== ' '">{{e}}</div>
+      <mat-menu #menu="matMenu" >
+          <button mat-menu-item>Replace</button>
+          <button mat-menu-item class="_red-text" (click)="deleteElement(i)">Delete</button>
+      </mat-menu>
+    </div>
+   
+  </div>
+</div>

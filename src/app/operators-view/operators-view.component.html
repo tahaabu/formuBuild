@@ -1,0 +1,19 @@
+<div class="container">
+  <div>
+    Basic Operators
+  </div>
+  <div class="card-container">
+    <div class="operator-card" *ngFor="let o of basicOperatorArray" (click)="addOperator(o)">
+      {{o}}
+    </div>
+  </div>
+  <br>
+  <div>
+    Logic Operators
+  </div>
+  <div class="card-container">
+    <div class="operator-card logical-card" *ngFor="let l of logicalOperatorArray">
+      {{l}}
+    </div>
+  </div>
+</div>

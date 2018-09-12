@@ -1,0 +1,11 @@
+<div class="parent">
+  
+  <div class="container">
+    <input class="search-icon" type="text" placeholder="Search Attributes">   
+  </div>
+  <div class="list">
+    <div class="content container" *ngFor = "let l of list" (click)="addVariable(l)">
+      {{l}}
+    </div>
+  </div>
+</div>

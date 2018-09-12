@@ -1,0 +1,31 @@
+.parent{
+    height: 100%;
+}
+
+.search-icon{
+    background: url(../../assets/images/base/IconsMain_Search.png) 98% / 20px no-repeat white;
+    width: calc(100% - 10px);
+    padding-right: 40px;
+}
+.container{
+    padding-left: 15px;
+}
+.list{
+    margin-top: 20px;
+    height: 476px;
+    height: calc(100% - 130px);
+    cursor: pointer;
+    overflow: auto;
+}
+.list::-webkit-scrollbar{
+    width: 0px;
+    
+}
+.content{
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+.content:hover{
+    background-color: #f4f7f9;
+}
